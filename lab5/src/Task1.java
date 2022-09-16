@@ -15,7 +15,9 @@ public class Task1 {
     private static int minElementInLargestColumn(int[][] matrix) {
         int minInMax = Integer.MAX_VALUE;
         try {
-            System.out.println(Arrays.deepToString(matrix));
+            if (matrix != null) {
+                System.out.println(Arrays.deepToString(matrix));
+            }
             // assume the matrix is rectangular
             int maxAbsSumColumn = 0;
             int maxAbsSum = 0;
